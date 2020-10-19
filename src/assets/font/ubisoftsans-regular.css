@@ -1,0 +1,8 @@
+@font-face
+{
+    font-family: 'ubisoftsans-regular';
+  src: url('ubisoftsans-regular.eot');
+      url('ubisoftsans-regular.eot?#') format('embedded-opentype'),
+      url('ubisoftsans-regular.woff') format('woff'),
+      url('ubisoftsans-regular.ttf') format('truetype');
+}
