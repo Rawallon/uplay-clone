@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Globals } from './global/global';
+import MainWindow from './MainWindow';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Globals />
+    <MainWindow />
   </React.StrictMode>,
   document.getElementById('root')
 );

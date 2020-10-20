@@ -33,4 +33,25 @@ export const Globals = createGlobalStyle`
   html, body, :root {
     font-family: 'ubisoftsans','Poppins', Arial, Helvetica, sans-serif
   }
+
+  /* width */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #3C4754; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #475362; 
+}
 `;
