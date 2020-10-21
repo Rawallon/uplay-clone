@@ -36,6 +36,7 @@ export const NewsCard = styled.div`
 `;
 
 export const NewsWrapper = styled.div`
+  margin: 32px 16px;
   font-family: "UbisoftSansBold";
   color: #fff;
   display: grid;

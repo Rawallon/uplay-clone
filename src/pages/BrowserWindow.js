@@ -13,7 +13,6 @@ import {
 // News img
 import WDL from "../assets/news/WDL.jpg";
 import Sale from "../assets/news/Sale.jpg";
- import News01 from '../assets/news/news-01.jpg';
  import Newsfeat01 from '../assets/news/news-feat-1.jpg';
  import Newsfeat02 from '../assets/news/news-feat-2.jpg';
  import Newsfeat03 from '../assets/news/news-feat-3.jpg';
@@ -109,20 +108,6 @@ export default function BrowserWindow() {
           </FeaturedNews>
             
         </RecentNews>
-
-        
-        {/*<FeaturedNews>
-          <header>
-            Destaques
-          </header>
-           <FeaturedNewsCard>
-            <RecentNewsCard>
-              <img src={WDL} alt="" />
-              <span>Edição Ultimate inclui Season Pass e muito mais</span>
-              <span className="detail"> há um dia</span>
-            </RecentNewsCard>
-          </FeaturedNewsCard>
-        </FeaturedNews> */}
       </NewsWrapper>
     </BrowserContainer>
   );
