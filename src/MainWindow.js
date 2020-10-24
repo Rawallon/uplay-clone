@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashRouter, NavLink, Route, Switch } from "react-router-dom";
 
 import profPic from "./assets/profile.jpg";
@@ -39,9 +39,14 @@ import {
 
 import BrowserWindow from "./pages/BrowserWindow";
 import Slider from "./components/Slider";
-import GamesWindow from "./pages/GamesWindow";
+import LibraryPage from "./pages/LibraryPage";
+import GamePage from "./pages/GamePage";
 
 export default function MainWindow() {
+  const [showInstalledGames, setShowInstalledGames] = useState(0)
+  const [showMyGames, setShowMyGames] = useState(0)
+  const [showFreeGames, setShowFreeGames] = useState(0)
+  
   return (
     <Container>
       <CssWindow>
@@ -57,7 +62,7 @@ export default function MainWindow() {
         <WindowHeader>
           <HeaderLeft>
             <FaBars size={18} />
-            <HashRouter basename="/">
+            <HashRouter>
               <NavLink to="/news">Notícias</NavLink>
               <NavLink to="/games">Jogos</NavLink>
               <NavLink to="/store">Store</NavLink>
@@ -114,7 +119,17 @@ export default function MainWindow() {
           <HashRouter>
             <Switch>
               <Route path="/news" component={BrowserWindow} />
-              <Route path="/games" component={GamesWindow} />
+              <Route path="/games" render={props => 
+              <LibraryPage 
+              showInstalledGames={showInstalledGames} 
+              setShowInstalledGames={setShowInstalledGames} 
+              showMyGames={showMyGames} 
+              setShowMyGames={setShowMyGames} 
+              showFreeGames={showFreeGames} 
+              setShowFreeGames={setShowFreeGames}
+              />}/>
+              <Route path="/game/:appid/:page" component={GamePage} />
+              <Route path="/game/:appid" component={GamePage} />
               <Route path="/slider" component={Slider} />
               <Route component={BrowserWindow} />
             </Switch>

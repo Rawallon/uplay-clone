@@ -10,7 +10,6 @@ export const GameCat = styled.section`
   text-decoration: none;
   color: #55aaff;
   /* margin-left: 30px; */
-  cursor: default;
 
   display: flex;
   align-items: center;
@@ -36,7 +35,6 @@ export const GameWrapper = styled.div`
   border-top: ${(props) => (props.showing ? "1px solid #33383D;" : "0;")};
 `;
 export const GameCard = styled.div`
-  cursor: default;
   font-family: "UbisoftSans";
   background: #161a1f;
   color: #b9babb;
@@ -62,8 +60,10 @@ export const GameTitle = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+
   span {
+    text-decoration: none;
     padding: 0 10px;
-    font-size: 14px;
+    /* font-size: 16px; */
   }
 `;

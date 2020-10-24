@@ -83,7 +83,6 @@ export const HeaderLeft = styled.div`
     text-decoration: none;
     color: #55aaff;
     margin-left: 30px;
-    cursor: default;
   }
 
   .active {
@@ -98,7 +97,6 @@ export const HeaderLeft = styled.div`
   }
   svg {
     margin-right: 10px;
-    cursor: default;
   }
 `;
 
@@ -109,7 +107,6 @@ export const HeaderRight = styled.div`
 
   svg {
     margin-left: 43px;
-    cursor: default;
   }
 
   & svg:hover {
@@ -157,11 +154,9 @@ export const ProfileData = styled.div`
   }
   span {
     font-size: 12px;
-    cursor: default;
   }
 `;
 export const ProfCoins = styled.div`
-  cursor: default;
   font-size: 14px;
   color: white;
   padding-left: 4px;

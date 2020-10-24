@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const NewsCard = styled.div`
   position: relative;
-  cursor: default;
   font-family: "UbisoftSansBold";
   background: #0e151d;
   color: white;

@@ -9,8 +9,8 @@ export const BrowserContainer = styled.div`
     margin-bottom: 32px;
   }
 `;
+
 export const NewsCard = styled.div`
-  cursor: default;
   font-family: "UbisoftSansBold";
   background: #0e151d;
   color: white;

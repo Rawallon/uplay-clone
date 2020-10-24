@@ -29,6 +29,7 @@ export const Globals = createGlobalStyle`
     outline: none;
     border: 0;
     box-sizing: border-box;
+    cursor: default;
   }
   html, body, :root {
     font-family: 'ubisoftsans','Poppins', Arial, Helvetica, sans-serif
