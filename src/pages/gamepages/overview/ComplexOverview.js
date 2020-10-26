@@ -8,10 +8,7 @@ import coinUbi from "../../../assets/coin.svg";
 import { NavLink } from "react-router-dom";
 
 import {
-    MiniStats,
-    MiniStatsAttr,
     OverviewGrid,
-    TextLink,
     HalfGrid,
     Box,
     ProfileList,
@@ -37,14 +34,14 @@ export default function ComplexOverview(props) {
           <span>Amigos que jogaram este jogo (1):</span>
           <ProfileList>
               <Profile status="off">
-              <img src={profPic} />
+              <img alt="" src={profPic} />
               <div>
                   <p>Rawallon</p>
                   <span>Off-line</span>
               </div>
               </Profile>
               <Profile status="on">
-              <img src={profPic} />
+              <img alt="" src={profPic} />
               <div>
                   <p>Rawallon</p>
                   <span> </span>
@@ -53,24 +50,24 @@ export default function ComplexOverview(props) {
           </ProfileList>
       </Box>
       <VideoBox>
-          <img src={gameData[6]} />
+          <img alt="" src={gameData[6]} />
           <section className="vtitle">Rainbow Six Siege: Steel Wave Operators Gameplay Gadgets and Starter Tips </section>
       </VideoBox>
       </HalfGrid>
       <BannerBox>
-          <img src={gameData[7]} />
+          <img alt="" src={gameData[7]} />
           <p>Rainbow Six Siege - Operação Shadow Legacy</p>
           <span>Ver todas notícias</span>
       </BannerBox>
       <ClubBox>
-          <header><img src={clubHeader} /></header>
+          <header><img alt="" src={clubHeader} /></header>
           <ClubWrapper>
 <ClubColumn>
   <header>Desafios Classicos</header>
     <ClubColumnBox>
         <p>12/12</p>
         <span>Concluído</span>
-        <div className="icons"> <img src={coinUbi} /></div>
+        <div className="icons"> <img alt="" src={coinUbi} /></div>
 
     </ClubColumnBox>
 </ClubColumn>
@@ -79,7 +76,7 @@ export default function ComplexOverview(props) {
     <ClubColumnBox>
         <p>6</p>
         <span>Desafios disponíveis</span>
-        <div className="icons"> <img src={coinUbi} /></div>
+        <div className="icons"> <img alt="" src={coinUbi} /></div>
 
     </ClubColumnBox>
 </ClubColumn>

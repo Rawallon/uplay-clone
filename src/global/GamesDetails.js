@@ -66,3 +66,14 @@ export const gamesNews = [
   // ["AppID","Cat","OverviewStyle","Name","IMG","LogoDir", "UpdateBannerImgDir",videoPic]
   []
 ];
+
+export const clubChallenges = [
+  // [AppID, Title, Desc, UCoins, XP]
+  ["1", "Dummy Challenge 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis enim sed eros placerat mattis. Integer sem orci, dignissim sit amet hendrerit in, feugiat non tortor.", 1, 1],
+  ["3", "Primeira Morte", "Elimine o primeiro inimigo nos modos Multiplayer ou Caça-terrorista em Casual/Colocação.", 10, 660],
+  ["3", "Meste da Destruição", "Colo um Atacante, utilize uma Carga de Demolição em uma parede destrutivel para criar uma passagem.", 10, 660],
+  ["3", "Dummy Challenge 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis enim sed eros placerat mattis. Integer sem orci, dignissim sit amet hendrerit in, feugiat non tortor.", 1337, 1337],
+  ["2", "Dummy Challenge 3", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis enim sed eros placerat mattis. Integer sem orci, dignissim sit amet hendrerit in, feugiat non tortor.", 1, 1],
+  ["4", "Dummy Challenge 4", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis enim sed eros placerat mattis. Integer sem orci, dignissim sit amet hendrerit in, feugiat non tortor.", 1, 1],
+  ["5", "Dummy Challenge 5", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis enim sed eros placerat mattis. Integer sem orci, dignissim sit amet hendrerit in, feugiat non tortor.", 1, 1],
+];

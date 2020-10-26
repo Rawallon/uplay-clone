@@ -15,13 +15,16 @@ export const BrowserWrapper = styled.div`
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  padding: 0 40px;
+  display:flex;
+  justify-content: center;
 `;
 
 export const CssWindow = styled.div`
   padding: 2px;
   background: #1c2127;
   width: 80%;
-  height: 80%;
+  height: 90%;
 
   display: flex;
   flex-direction: column;

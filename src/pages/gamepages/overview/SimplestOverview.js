@@ -1,22 +1,12 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 
-import profPic from "../../../assets/profile.jpg";
 import clubHeader from "../../../assets/club-header.jpg";
 import coinUbi from "../../../assets/coin.svg";
 
 
-import { NavLink } from "react-router-dom";
-
 import {
-    MiniStats,
-    MiniStatsAttr,
     OverviewGrid,
-    TextLink,
-    HalfGrid,
-    Box,
-    ProfileList,
-    Profile,
-    VideoBox,
     BannerBox,
     ClubBox,
     ClubWrapper,
@@ -33,19 +23,19 @@ export default function SimplestOverview(props) {
         <div>
               <OverviewGrid style>
       <BannerBox>
-          <img src={gameData[7]} />
+          <img alt="" src={gameData[7]} />
           <p>Rainbow Six Siege - Operação Shadow Legacy</p>
           <span>Ver todas notícias</span>
       </BannerBox>
       <ClubBox>
-          <header><img src={clubHeader} /></header>
+          <header><img alt="" src={clubHeader} /></header>
           <ClubWrapper>
 <ClubColumn>
   <header>Desafios Classicos</header>
     <ClubColumnBox>
         <p>12/12</p>
         <span>Concluído</span>
-        <div className="icons"> <img src={coinUbi} /></div>
+        <div className="icons"> <img alt="" src={coinUbi} /></div>
 
     </ClubColumnBox>
 </ClubColumn>
@@ -54,7 +44,7 @@ export default function SimplestOverview(props) {
     <ClubColumnBox>
         <p>6</p>
         <span>Desafios disponíveis</span>
-        <div className="icons"> <img src={coinUbi} /></div>
+        <div className="icons"> <img alt="" src={coinUbi} /></div>
 
     </ClubColumnBox>
 </ClubColumn>
