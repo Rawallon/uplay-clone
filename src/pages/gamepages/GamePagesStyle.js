@@ -10,8 +10,25 @@ export const OverviewGrid = styled.div`
   /* grid-template-rows: repeat(4, min); */
   /* grid-template-rows: minmax(134px, 134px); */
 `;
+export const HelpGrid = styled(OverviewGrid)`
+background: #000;
+width: 100%;
+  grid-template-columns: 100%
+  span{
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    grid-column: span 3;
+    border: 1px solid;
+  }
+`;
 export const NewsGrid = styled(OverviewGrid)`
   gap: 40px;
+`;
+export const RewardsGrid = styled(OverviewGrid)`
+display:flex;
+flex-direction:column;
+  gap: 0px;
+  width:100%;
 `;
 export const ChallengesGrid = styled(OverviewGrid)`
   gap: 0px;
@@ -37,6 +54,113 @@ export const Box = styled.div`
   background: #12151a;
   color: ${(props) => props.color};
 `;
+export const RewardBox = styled.div`
+  position:relative;
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  width: 100%;
+  /* padding: 20px 20px 0 20px; */
+  padding: 20px 20px;
+  background: ${props => props.unlocked ? "#13161A" : "#090A0C"};
+  border-bottom: 2px solid #1c2127;
+  img{
+    width:100%;
+    min-width: 180px;
+    max-width: 240px;
+    height:auto;
+  }
+`;
+
+export const AchievBox = styled(RewardBox)`
+  grid-template-columns:  fit-content(100%) 1fr fit-content(100%);
+  img{
+    margin-right: 20px;
+    width: 62px;
+    height:62px;
+    min-width: 62px;
+  }
+`;
+
+
+
+export const AchievLocked = styled.div`
+position:absolute;
+background: rgba(18,22,16,0.6);
+width: 62px;
+height:62px;
+display:flex;
+justify-content:center;
+align-items:center;
+svg{
+  fill:white;
+}
+`;
+export const CheckedReward = styled.div`
+position:absolute;
+background: #22BB11;
+width: 36px;
+height:31px;
+display:flex;
+justify-content:center;
+align-items:center;
+svg{
+  fill:white;
+}
+`;
+
+export const RewardDesc = styled.div`
+  display: flex;
+flex-direction: column;
+h1{
+  color: white;
+  font-size: 20px;
+  margin-bottom:20px;
+}
+span{ 
+  margin-bottom:20px;
+  color: #C4C4C4;
+  font-size: 13px;
+}
+`;
+
+export const PropsDesc = styled.div`
+display: flex;
+flex-direction: column;
+padding: 2px 0;
+h1{
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom:16px;
+}
+span{ 
+  margin-bottom:15px;
+  color: #C4C4C4;
+  font-size: 14px;
+}
+`;
+export const AchievDesc = styled(RewardDesc)`
+justify-content: space-between;
+h1{
+  margin-bottom:0px;
+}
+span{ 
+  margin-bottom:0px;
+}
+`;
+
+export const AchievText = styled.div`
+display:grid;
+align-content:space-between;
+height: 80%;
+span{
+  font-size: 13px;
+}
+svg{
+  margin-right:10px;
+}
+`;
+
 export const CompletedCheck = styled.div`
   display: flex;
   color: #0cde89;
@@ -190,7 +314,7 @@ export const RewardColumn = styled(ClubColumn)`
   padding-left: 20px;
   border-left: 1px solid gray;
   a {
-    color: #55aaff;
+    color: #0077EE;
     text-decoration: none;
   }
 `;
@@ -199,6 +323,23 @@ export const RewardColumnBox = styled(ClubColumnBox)`
   justify-content: center;
   text-align: center;
   background: transparent;
+`;
+export const RewardBtn = styled.div`
+  button {
+    transition: filter 0.3s linear;
+    margin-bottom: -12px;
+    padding: 5px 30px;
+    font-size: 16px;
+    font-family: "UbisoftSansBold";
+    color: white;
+    background: #0077EE;
+    border-radius: 3px;
+  }
+
+  button:hover {
+    filter: brightness(120%);
+  }
+
 `;
 export const TextLink = styled.div`
   color: ${(props) => (props.deactivated ? "#293B4F;" : "#FFF;")};
@@ -260,7 +401,7 @@ export const Profile = styled.div`
     margin-right: 12px;
     width: 38px;
     height: 38px;
-    border: 2px solid ${(props) => (props.status === "on" ? "#55aaff" : "#fff")};
+    border: 2px solid ${(props) => (props.status === "on" ? "#0077EE" : "#fff")};
   }
 `;
 

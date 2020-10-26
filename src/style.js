@@ -68,7 +68,7 @@ export const Windowsopt = styled.header`
 export const WindowHeader = styled.div`
   padding: 22px 40px;
   background: #161a1f;
-  color: #55aaff;
+  color: #0077EE;
   width: 100%;
   height: 60px;
   max-height: 90px;
@@ -84,7 +84,7 @@ export const HeaderLeft = styled.div`
 
   a {
     text-decoration: none;
-    color: #55aaff;
+    color: #0077EE;
     margin-left: 30px;
   }
 
@@ -135,7 +135,7 @@ export const ProfilePic = styled.div`
   img {
     width: 38px;
     height: 38px;
-    border: 2px solid #55aaff;
+    border: 2px solid #0077EE;
   }
 `;
 export const ProfileData = styled.div`

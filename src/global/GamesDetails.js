@@ -77,3 +77,16 @@ export const clubChallenges = [
   ["4", "Dummy Challenge 4", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis enim sed eros placerat mattis. Integer sem orci, dignissim sit amet hendrerit in, feugiat non tortor.", 1, 1],
   ["5", "Dummy Challenge 5", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis enim sed eros placerat mattis. Integer sem orci, dignissim sit amet hendrerit in, feugiat non tortor.", 1, 1],
 ];
+
+export const clubRewards = [
+  //[AppID, Title, Desc, Type, Price, image]
+  ["3","Trilha sonora","Faixas selecionadas da trilha sonora oficial em formato digital.","download","0","https://static8.cdn.ubi.com/u/Uplay/Games/RSIX7/rewards/reward2.jpg?imwidth=640"],
+  ["3","Fan Kit do Rainbow Six Siege Operation Ember Rise","Explore o conteúdo mais recente de Rainbow Six Siege com o Fan Kit da Operation Ember Rise!","download","0","https://ubiservices.cdn.ubi.com/8a755c07-9730-4204-a7fb-60a76c280950/reward/DEFAULT_RSIX7REWARD39_thumbnail.jpg?imwidth=640"],
+  ["3","Fan Kit do Rainbow Six Siege Operation Shifting Tides","Explore o conteúdo mais recente de Rainbow Six Siege com o Fan Kit da Operation Shifting Tides!","download","0","https://ubiservices.cdn.ubi.com/8a755c07-9730-4204-a7fb-60a76c280950/reward/DEFAULT_RSIX7REWARD45_thumbnail.jpg?imwidth=640"],
+  ["3","Fan Kit do Rainbow Six Siege Operation Steel Wave","Explore o conteúdo mais recente de Rainbow Six Siege com o Fan Kit da Operation Steel Wave!","download","0","https://ubiservices.cdn.ubi.com/8a755c07-9730-4204-a7fb-60a76c280950/reward/DEFAULT_RSIX7REWARD51_thumbnail.png?imwidth=640"],
+  ["3","Fan Kit do Rainbow Six Siege Operation Void Edge","Explore o conteúdo mais recente de Rainbow Six Siege com o Fan Kit da Operation Void Edge!","download","0","https://ubiservices.cdn.ubi.com/8a755c07-9730-4204-a7fb-60a76c280950/reward/DEFAULT_RSIX7REWARD47_thumbnail.png?imwidth=640"],
+  ["3","Fan Kit do Rainbow Six® Siege Burnt Horizon","No Fan Kit do Rainbow Six® Siege você encontra diversos itens em alta resolução que foram usados na Operation Burnt Horizon. Aproveite!","download","0","https://ubiservices.cdn.ubi.com/8a755c07-9730-4204-a7fb-60a76c280950/reward/DEFAULT_RSIX7REWARD33_thumbnail.jpg?imwidth=640"],
+  ["3","Guias de cosplay: Operation Burnt Horizon","Dê vida aos Agentes da Operation Burnt Horizon com estes guias de cosplay para Gridlock e Mozzie!","download","0","https://ubiservices.cdn.ubi.com/8a755c07-9730-4204-a7fb-60a76c280950/reward/DEFAULT_RSIX7REWARD42_thumbnail.jpg?imwidth=640"],
+  ["3","Guias de cosplay: Operation Ember Rise","Dê vida aos Agentes da Operation Ember Rise com estes guias de cosplay para Amaru e Goyo!","download","0","https://ubiservices.cdn.ubi.com/8a755c07-9730-4204-a7fb-60a76c280950/reward/DEFAULT_RSIX7REWARD40_thumbnail.jpg?imwidth=640"],
+  
+];

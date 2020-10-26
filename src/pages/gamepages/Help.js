@@ -1,9 +1,11 @@
 import React from 'react'
+import { HelpGrid } from './GamePagesStyle'
 
 export default function Help() {
     return (
-        <div>
+        <HelpGrid>
             Help
-        </div>
+            <span>as</span>
+        </HelpGrid>
     )
 }

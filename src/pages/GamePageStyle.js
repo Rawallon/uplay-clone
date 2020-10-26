@@ -4,13 +4,14 @@ export const BrowserContainer = styled.div`
   /* padding: 0 9% 0 9%; */
   /* width: 100%;
   height: 100%; */
-  color: #55aaff;
+  color: #0077EE;
   max-width: 1500px;
   
 `;
 
 export const PageWrapper = styled.div`
   height: 100%;
+  width:100%;
   display: grid;
   /* grid-template-columns: 0.65fr 2fr; */
   grid-template-columns: 0.32fr 1fr;
@@ -50,7 +51,7 @@ export const TextLink = styled.div`
     color: white;
     width: 100%;
     height: 40px;
-    background: #55aaff;
+    background: #0077EE;
     border-radius: 3px;
   }
 
