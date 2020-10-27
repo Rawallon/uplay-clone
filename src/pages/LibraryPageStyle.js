@@ -8,7 +8,7 @@ export const BrowserContainer = styled.div`
 export const GameCat = styled.section`
   font-family: "UbisoftSansBold";
   text-decoration: none;
-  color: #0077EE;
+  color: #55aaff;
   /* margin-left: 30px; */
 
   display: flex;

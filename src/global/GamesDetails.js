@@ -13,7 +13,7 @@ import Sale from "../assets/news/Sale.jpg";
 export const newsSlider = [
   //[ Text, IMG ]
   ["Ubisoft Connect/Uplay Clone", "https://ubiservices.cdn.ubi.com/380d0ffc-edd0-4ea9-a486-83c2e504d708/news/960x540_UBC_keyart.jpg"],
-  ["Wow, a slider!", "https://ubiservices.cdn.ubi.com/66fcdb38-e7c2-45dd-a1c4-acbd7086d00f/news/NEWS_960x540.jpg"],
+  ["Check the repo on Github", "https://ubiservices.cdn.ubi.com/66fcdb38-e7c2-45dd-a1c4-acbd7086d00f/news/NEWS_960x540.jpg"],
   ["Wow, a slider!", WDL],
   ["Here we go!", Sale],
 ];
@@ -74,9 +74,38 @@ export const gamesDetails = [
 ];
 
 export const gamesNews = [
-  // ["AppID","Cat","OverviewStyle","Name","IMG","LogoDir", "UpdateBannerImgDir",videoPic]
-  []
+  // [AppID, Title, IMG]
+  ["3", "Rainbow Six Siege - Operação Shadow Legacy", UpdateBannerIMG],
+  ["3", "News 1 Title", UpdateBannerIMG],
+  ["3", "News 2 Title", UpdateBannerIMG],
+  ["3", "News 3 Title", UpdateBannerIMG],
+  ["3", "News 4 Title", UpdateBannerIMG],
+  //
+  ["1", "Update title!", "http://lorempixel.com/1280/720/"],
+  ["1", "News 1 Title", "http://lorempixel.com/1280/720/"],
+  ["1", "News 2 Title", "http://lorempixel.com/1280/720/"],
+  ["1", "News 3 Title", "http://lorempixel.com/1280/720/"],
+  ["1", "News 4 Title", "http://lorempixel.com/1280/720/"],
+  //
+  ["2", "Update title!", "http://lorempixel.com/1280/720/"],
+  ["2", "News 1 Title", "http://lorempixel.com/1280/720/"],
+  ["2", "News 2 Title", "http://lorempixel.com/1280/720/"],
+  ["2", "News 3 Title", "http://lorempixel.com/1280/720/"],
+  ["2", "News 4 Title", "http://lorempixel.com/1280/720/"],
+  //
+  ["4", "Update title!", "http://lorempixel.com/1280/720/"],
+  ["4", "News 1 Title", "http://lorempixel.com/1280/720/"],
+  ["4", "News 2 Title", "http://lorempixel.com/1280/720/"],
+  ["4", "News 3 Title", "http://lorempixel.com/1280/720/"],
+  ["4", "News 4 Title", "http://lorempixel.com/1280/720/"],
+  //
+  ["5", "Update title!", "http://lorempixel.com/1280/720/"],
+  ["5", "News 1 Title", "http://lorempixel.com/1280/720/"],
+  ["5", "News 2 Title", "http://lorempixel.com/1280/720/"],
+  ["5", "News 3 Title", "http://lorempixel.com/1280/720/"],
+  ["5", "News 4 Title", "http://lorempixel.com/1280/720/"],
 ];
+
 
 export const clubChallenges = [
   // [AppID, Title, Desc, UCoins, XP]

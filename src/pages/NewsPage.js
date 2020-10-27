@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import {
+  BrowserWrapper,
   BrowserContainer,
   NewsCard,
   NewsWrapper,
@@ -9,6 +10,7 @@ import {
   FeaturedNews,
   FeaturedNewsCard,
   RecentNewsWrapper,
+  Newscard,
 } from "./BrowserStyle";
 // News img
 import WDL from "../assets/news/WDL.jpg";
@@ -20,8 +22,9 @@ import Sale from "../assets/news/Sale.jpg";
 // News img
 import Slider from "../components/Slider";
 import { FaThLarge, FaThList } from "react-icons/fa";
+import { withRouter } from "react-router-dom";
 
-export default function BrowserWindow() {
+export default function NewsPage() {
     const recentNews = [
         // Taken from: https://news.ubisoft.com/en-us/archive
         ["https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2RacQjMS5w3EwIppOhm4aP/8c4064a7d663072312f25102c5b2da0b/ACV_EXP01_KeyArt.jpg", "Assassin’s Creed Valhalla Post-Launch Detailed"],
@@ -38,8 +41,9 @@ export default function BrowserWindow() {
         ["https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2yEpnoHESmuxlpIfClzusp/0eb86c6cfdef72d8801c0d92181bcaa8/Thumb.jpg", "For Honor Will Be Playable on Next-Gen Consoles"]
     ]
   return (
+    <BrowserWrapper news={true}>
     <BrowserContainer>
-       <div className="newscard">
+       <Newscard >
         <NewsCard>
         <img src={WDL} alt="" />
         <span>Edição Ultimate inclui Season Pass e muito mais</span>
@@ -48,7 +52,7 @@ export default function BrowserWindow() {
         <img src={Sale} alt="" />
         <span>Grandes descontos para os best sellers</span>
         </NewsCard>
-        </div>
+        </Newscard>
 
         <Slider /> 
 
@@ -110,5 +114,6 @@ export default function BrowserWindow() {
         </RecentNews>
       </NewsWrapper>
     </BrowserContainer>
-  );
+    </BrowserWrapper>
+);
 }

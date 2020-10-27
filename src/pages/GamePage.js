@@ -23,29 +23,26 @@ export default function GamePage(props) {
         else if(gameData[1] === 'Free') 
             return "Adicionar aos Meus Jogos";
     }
-
     return (
         <BrowserContainer>
         <PageWrapper>
             <MenuWrapper>
-            <HashRouter basename="/">
-                <TextLink><NavLink to="/games"><FaArrowLeft /> Voltar para Jogos</NavLink></TextLink>
-            </HashRouter>
+                <TextLink><NavLink to={"/games"}><FaArrowLeft /> Voltar para Jogos</NavLink></TextLink>
                 <TextLink><img src={gameData[5]} alt="" /></TextLink>
                 <TextLink><button>{buttonText()}</button></TextLink>
                 <SubTextLink>{(gameData[1] === 'My' && "Localizar jogo instalado")}</SubTextLink>
                 <SubTextLink>{(((gameData[1] === 'Installed') || (gameData[1] === 'My')) && "Mostrar Chave")}</SubTextLink>
             <SubMenuWrapper>
-            <HashRouter basename={"/game/"+props.match.params.appid+"/"}>
-                <TextLink active={props.match.params.page === "overview"}><NavLink to="overview"><FaGamepad /> Visão geral</NavLink></TextLink>
-                <TextLink active={props.match.params.page === "news"}><NavLink to="news"><FaNewspaper /> Notícias do jogo</NavLink></TextLink>
-                <TextLink active={props.match.params.page === "challenges"}><NavLink to="challenges"> <FaBullseye /> Desafios do Club </NavLink></TextLink>
-                <TextLink active={props.match.params.page === "rewards"}><NavLink to="rewards"> <FaGift /> Recompensas </NavLink></TextLink>
-                <TextLink active={props.match.params.page === "achievements"}><NavLink to="achievements"> <FaMedal /> Consquistas</NavLink></TextLink>
-                {/* <TextLink active={props.match.params.page === "games"}><NavLink to="/games"> <FaShoppingCart /> Store</NavLink></TextLink> */}
-                <TextLink active={props.match.params.page === "props"}><NavLink to="props"> <FaWrench /> Propriedades</NavLink></TextLink>
-                <TextLink active={props.match.params.page === "help"}><NavLink to="help"> <FaQuestion /> Suporte</NavLink></TextLink>
-            </HashRouter>
+            {/* <HashRouter basename={"/game/"+props.match.params.appid+"/"}> */}
+                <TextLink active={props.match.params.page === "overview"}><NavLink to={"overview"}><FaGamepad /> Visão geral</NavLink></TextLink>
+                <TextLink active={props.match.params.page === "news"}><NavLink to={"news"}><FaNewspaper /> Notícias do jogo</NavLink></TextLink>
+                <TextLink active={props.match.params.page === "challenges"}><NavLink to={"challenges"}> <FaBullseye /> Desafios do Club </NavLink></TextLink>
+                <TextLink active={props.match.params.page === "rewards"}><NavLink to={"rewards"}> <FaGift /> Recompensas </NavLink></TextLink>
+                <TextLink active={props.match.params.page === "achievements"}><NavLink to={"achievements"}> <FaMedal /> Consquistas</NavLink></TextLink>
+                {/* <TextLink active={props.match.params.page === "games"}><NavLink to={"/games"}> <FaShoppingCart /> Store</NavLink></TextLink> */}
+                <TextLink active={props.match.params.page === "props"}><NavLink to={"props"}> <FaWrench /> Propriedades</NavLink></TextLink>
+                <TextLink active={props.match.params.page === "help"}><NavLink to={"help"}> <FaQuestion /> Suporte</NavLink></TextLink>
+            {/* </HashRouter> */}
 
             </SubMenuWrapper>
             </MenuWrapper>
