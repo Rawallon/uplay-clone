@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const BrowserContainer = styled.div`
-  padding: 32px 8% 0 8%;
+  /* padding: 32px 8% 0 8%; */
   width: 100%;
   height: 100%;
   .newscard {

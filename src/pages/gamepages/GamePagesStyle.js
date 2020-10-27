@@ -11,13 +11,14 @@ export const OverviewGrid = styled.div`
   /* grid-template-rows: minmax(134px, 134px); */
 `;
 export const HelpGrid = styled(OverviewGrid)`
+overflow: hidden;
+width: 60vw;
+min-width: 120px;
+max-width: 1500px;
 background: #000;
-width: 100%;
-  grid-template-columns: 100%
+
   span{
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    grid-column: span 3;
+    width:100%;
     border: 1px solid;
   }
 `;
@@ -25,10 +26,18 @@ export const NewsGrid = styled(OverviewGrid)`
   gap: 40px;
 `;
 export const RewardsGrid = styled(OverviewGrid)`
+  padding: 40px 30px 0 0;
+
 display:flex;
 flex-direction:column;
   gap: 0px;
   width:100%;
+`;
+export const AchievGrid = styled(RewardsGrid)`
+  padding: 40px 25px 0 0;
+`;
+export const PropsGrid = styled(RewardsGrid)`
+  padding: 40px 0px 0 0;
 `;
 export const ChallengesGrid = styled(OverviewGrid)`
   gap: 0px;
@@ -72,6 +81,7 @@ export const RewardBox = styled.div`
 `;
 
 export const AchievBox = styled(RewardBox)`
+
   grid-template-columns:  fit-content(100%) 1fr fit-content(100%);
   img{
     margin-right: 20px;
@@ -80,7 +90,6 @@ export const AchievBox = styled(RewardBox)`
     min-width: 62px;
   }
 `;
-
 
 
 export const AchievLocked = styled.div`

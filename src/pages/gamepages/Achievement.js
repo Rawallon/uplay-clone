@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheck, FaLock } from "react-icons/fa";
 import { clubRewards } from "../../global/GamesDetails";
 import {
-  RewardsGrid,
+  AchievGrid,
   AchievBox,
   AchievDesc,
   AchievLocked,
@@ -14,7 +14,7 @@ import dummyAchiev2 from '../../assets/achiev1.webp'
 
 export default function Rewards(props) {
   return (
-    <RewardsGrid style>
+    <AchievGrid style>
         
       <AchievBox unlocked={true}>
         <div>
@@ -47,6 +47,6 @@ export default function Rewards(props) {
       </AchievBox>
 
       
-    </RewardsGrid>
+    </AchievGrid>
   );
 }

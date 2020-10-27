@@ -6,15 +6,26 @@ export const BrowserContainer = styled.div`
   height: 100%; */
   color: #0077EE;
   max-width: 1500px;
+  min-width: 900px;
   
 `;
-
+export const StoreContainer = styled(BrowserContainer)`
+width:100%;
+  background: #000;
+  display:flex;
+  align-content:center;
+  justify-content:center;
+  img{
+    width:15%;
+    height:auto;
+  }
+`;
 export const PageWrapper = styled.div`
   height: 100%;
   width:100%;
   display: grid;
   /* grid-template-columns: 0.65fr 2fr; */
-  grid-template-columns: 0.32fr 1fr;
+  grid-template-columns: minmax(200px,0.3fr) minmax(1080px,1fr);
   gap: 40px;
 `;
 export const MenuWrapper = styled.div`

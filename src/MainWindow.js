@@ -41,6 +41,7 @@ import BrowserWindow from "./pages/BrowserWindow";
 import Slider from "./components/Slider";
 import LibraryPage from "./pages/LibraryPage";
 import GamePage from "./pages/GamePage";
+import StorePage from "./pages/StorePage";
 
 export default function MainWindow() {
   const [showInstalledGames, setShowInstalledGames] = useState(0)
@@ -118,6 +119,7 @@ export default function MainWindow() {
         <BrowserWrapper>
           <HashRouter>
             <Switch>
+              <Route path="/store" component={StorePage} />
               <Route path="/news" component={BrowserWindow} />
               <Route path="/games" render={props => 
               <LibraryPage 

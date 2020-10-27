@@ -5,12 +5,12 @@ import {
   AchievBox,
   RewardBtn,
   PropsDesc,
-  OverviewGrid,
+  PropsGrid,
 } from "./GamePagesStyle";
 
 export default function Rewards(props) {
   return (
-    <OverviewGrid>
+    <PropsGrid>
       <RewardsGrid style>
         <AchievBox unlocked={true}>
           <PropsDesc>
@@ -40,6 +40,6 @@ export default function Rewards(props) {
           </PropsDesc>
         </AchievBox>
       </RewardsGrid>
-    </OverviewGrid>
+    </PropsGrid>
   );
 }
