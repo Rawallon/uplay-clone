@@ -7,6 +7,17 @@ import TCWildlandsLogo from "../assets/games/logo/tcgrwildlands.png";
 import videoPic from "../assets/games/social/r6/youtube.webp";
 import UpdateBannerIMG from '../assets/games/updates/SHADOWLEGACY.webp';
 
+import WDL from "../assets/news/WDL.jpg";
+import Sale from "../assets/news/Sale.jpg";
+
+export const newsSlider = [
+  //[ Text, IMG ]
+  ["Ubisoft Connect/Uplay Clone", "https://ubiservices.cdn.ubi.com/380d0ffc-edd0-4ea9-a486-83c2e504d708/news/960x540_UBC_keyart.jpg"],
+  ["Wow, a slider!", "https://ubiservices.cdn.ubi.com/66fcdb38-e7c2-45dd-a1c4-acbd7086d00f/news/NEWS_960x540.jpg"],
+  ["Wow, a slider!", WDL],
+  ["Here we go!", Sale],
+];
+
 export const gamesDetails = [
   // Everything taken from: https://store.ubi.com/ofertas//
   // ["AppID","Cat","OverviewStyle","Name","IMG","LogoDir", "UpdateBannerImgDir",videoPic]

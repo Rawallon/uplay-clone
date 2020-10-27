@@ -43,11 +43,10 @@ import LibraryPage from "./pages/LibraryPage";
 import GamePage from "./pages/GamePage";
 import StorePage from "./pages/StorePage";
 
-export default function MainWindow() {
+export default function MainWindow(props) {
   const [showInstalledGames, setShowInstalledGames] = useState(0)
   const [showMyGames, setShowMyGames] = useState(0)
   const [showFreeGames, setShowFreeGames] = useState(0)
-  
   return (
     <Container>
       <CssWindow>
@@ -116,7 +115,8 @@ export default function MainWindow() {
           </HeaderRight>
         </WindowHeader>
 
-        <BrowserWrapper>
+        <BrowserWrapper news={true}>
+  
           <HashRouter>
             <Switch>
               <Route path="/store" component={StorePage} />

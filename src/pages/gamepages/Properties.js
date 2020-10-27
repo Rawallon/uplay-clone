@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCheck, FaLock } from "react-icons/fa";
 import {
   RewardsGrid,
   AchievBox,
@@ -22,7 +21,7 @@ export default function Rewards(props) {
             <RewardBtn>
               <button>Desbloqueie uma versão teste</button>
             </RewardBtn>
-            <h1></h1>
+            <h1> </h1>
           </PropsDesc>
         </AchievBox>
       </RewardsGrid>

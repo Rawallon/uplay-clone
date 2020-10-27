@@ -1,41 +1,48 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NewsCard, LArrow, RArrow , Dots} from "./SliderStyle";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-
-import WDL from "../assets/news/WDL.jpg";
-import Sale from "../assets/news/Sale.jpg";
-
+import { newsSlider } from '../global/GamesDetails';
+import { useTransition, animated } from "react-spring";
 
 export default function Slider() {
   const [currentShow, setCurrentShow] = useState(0);
-  const slider = [
-    [WDL, "1 wow much slidey"],
-    [Sale, "2 Oh welp here we go"],
-  ];
+  const sliderData = newsSlider;
+
 
   const changeValue = (val, func) => {
     if (func === "+") {
-      if (slider.length > currentShow + 1) setCurrentShow(currentShow + 1);
+      if (sliderData.length > currentShow + 1) setCurrentShow(currentShow + 1);
       else setCurrentShow(0);
     } else if (func === "-") {
       if (currentShow - 1 >= 0) setCurrentShow(currentShow - 1);
-      else setCurrentShow(slider.length - 1);
+      else setCurrentShow(sliderData.length - 1);
     }
   };
+
+  const transitions = useTransition(sliderData[currentShow][1], null, {
+    from: { opacity: 1, transform: 'translate3d(100%,0,0)' },
+    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
+    leave: { position: "absolute",opacity: 1, transform: 'translate3d(-100%,0,0)' },
+    });
   return (
     <div>
       <NewsCard>
         <LArrow>
-            <FaAngleLeft size={32} onClick={(e) => changeValue(1, "+")} />
+            <FaAngleLeft size={32} onClick={(e) => changeValue(1, "-")} />
         </LArrow>
         <RArrow>
-            <FaAngleRight size={32} onClick={(e) => changeValue(1, "-")} />
+            <FaAngleRight size={32} onClick={(e) => changeValue(1, "+")} />
         </RArrow>
-        <img src={slider[currentShow][0]} alt="" />
-        <span>{slider[currentShow][1]}</span>
+        {
+          transitions.map(({ item, props, key }) =>
+          <animated.img key={key} style={props} src={item} />
+          )
+        }
+        <span>{sliderData[currentShow][0]}</span>
+
         <Dots>
         {
-            slider.map((el, index)=> <div className={index === currentShow ? 'square active' : 'square'}></div>)
+            sliderData.map((el, index)=> <div key={index} className={index === currentShow ? 'square active' : 'square'}></div>)
         }
         </Dots>
         

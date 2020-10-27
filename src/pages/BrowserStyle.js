@@ -21,7 +21,7 @@ export const NewsCard = styled.div`
   display: flex;
   flex-direction: column;
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
   }
   span {
     padding: 16px 20px;

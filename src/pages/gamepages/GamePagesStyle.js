@@ -10,18 +10,7 @@ export const OverviewGrid = styled.div`
   /* grid-template-rows: repeat(4, min); */
   /* grid-template-rows: minmax(134px, 134px); */
 `;
-export const HelpGrid = styled(OverviewGrid)`
-overflow: hidden;
-width: 60vw;
-min-width: 120px;
-max-width: 1500px;
-background: #000;
 
-  span{
-    width:100%;
-    border: 1px solid;
-  }
-`;
 export const NewsGrid = styled(OverviewGrid)`
   gap: 40px;
 `;
@@ -346,7 +335,7 @@ export const RewardBtn = styled.div`
   }
 
   button:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
   }
 
 `;
@@ -358,7 +347,7 @@ export const TextLink = styled.div`
   margin-top: 14px;
   margin-bottom: 10px;
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
   }
 `;
 

@@ -16,7 +16,7 @@ export const GameCat = styled.section`
   margin-bottom: 13px;
 
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
   }
 `;
 
@@ -46,7 +46,7 @@ export const GameCard = styled.div`
   display: flex;
   flex-direction: column;
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
   }
   img {
     object-fit: fill;

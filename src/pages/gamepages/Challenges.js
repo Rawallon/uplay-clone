@@ -12,7 +12,6 @@ import {
   ChallengeList,
   ChallengeListItem,
   ChallengeRewardsListRow,
-  SmallCompletedCheck,
 } from "./GamePagesStyle";
 import { FaCheck } from "react-icons/fa";
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { FaCheck, FaLock } from "react-icons/fa";
-import { clubRewards } from "../../global/GamesDetails";
 import {
   AchievGrid,
   AchievBox,

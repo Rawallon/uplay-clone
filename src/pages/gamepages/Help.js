@@ -6,7 +6,7 @@ import {
   PropsGrid,
 } from "./GamePagesStyle";
 import { TextLink } from "../GamePageStyle";
-import { FaComment, FaComments, FaFacebook, FaGlobe, FaQuestion } from "react-icons/fa";
+import { FaComments, FaFacebook, FaGlobe, FaQuestion } from "react-icons/fa";
 
 export default function Rewards(props) {
   return (
@@ -15,9 +15,9 @@ export default function Rewards(props) {
         <AchievBox unlocked={true}>
           <PropsDesc>
             <TextLink><a href="https://github.com/Rawallon"><FaGlobe /> My Github</a></TextLink>
-            <TextLink><a href=""><FaFacebook /> My Github</a></TextLink>
-            <TextLink><a href=""><FaComments /> My Github</a></TextLink>
-            <TextLink><a href=""><FaQuestion /> My Github</a></TextLink>
+            <TextLink><a href="https://github.com/Rawallon"><FaFacebook /> My Github</a></TextLink>
+            <TextLink><a href="https://github.com/Rawallon"><FaComments /> My Github</a></TextLink>
+            <TextLink><a href="https://github.com/Rawallon"><FaQuestion /> My Github</a></TextLink>
             
           </PropsDesc>
         </AchievBox>

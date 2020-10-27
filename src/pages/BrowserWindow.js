@@ -67,12 +67,12 @@ export default function BrowserWindow() {
           </header>
           <RecentNewsGrid>
               <RecentNewsWrapper>
-              {recentNews.map((el)=>(
-                    <RecentNewsCard>
-                    <img src={el[0]} alt="" />
-              <div className="content">
-                    <span>{el[1]}</span>
-                    <span className="detail"> há um dia</span>
+              {recentNews.map((el, index)=>(
+                    <RecentNewsCard key={el[1]}>
+                      <img src={el[0]} alt="" />
+                      <div className="content">
+                      <span>{el[1]}</span>
+                      <span className="detail"> há um dia</span>
                     </div>
                   </RecentNewsCard>
                ))}   

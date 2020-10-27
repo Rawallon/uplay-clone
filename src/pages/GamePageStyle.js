@@ -75,14 +75,14 @@ export const TextLink = styled.div`
   }
   a:hover,
   button:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
   }
 `;
 
 export const SubTextLink = styled(TextLink)`
   margin-bottom: 25px;
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
   }
 `;
 
