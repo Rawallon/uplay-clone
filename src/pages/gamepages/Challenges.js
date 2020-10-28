@@ -32,23 +32,24 @@ export default function Challenges(props) {
           <TextLink active={true}>Concluido(s) (0/{gameData.length})</TextLink>
         </ChallengeWrapper>
         <ChallengeList>
-        {gameData.map((el,index) => {return(
-          <ChallengeListItem key={index} active={selectChallenge === index} onClick={() => setSelectChallenge(index)} >
-            <h1>{el[1]}</h1>
-            <h5>{el[2].substr(0, 73)}...</h5>
-            <ChallengeRewardsListRow>
-              <img src={coinUbi} alt="" />
-              <img src={coinUbi} alt="" />
-              <div className="completed">
-            <p>
-              <FaCheck /> Concluído
+          {gameData.map((el, index) => {
+            return (
+              <ChallengeListItem key={index} active={selectChallenge === index} onClick={() => setSelectChallenge(index)} >
+                <h1>{el[1]}</h1>
+                <h5>{el[2].substr(0, 73)}...</h5>
+                <ChallengeRewardsListRow>
+                  <img src={coinUbi} alt="" />
+                  <img src={coinUbi} alt="" />
+                  <div className="completed">
+                    <p>
+                      <FaCheck /> Concluído
             </p>
-          </div>
-            </ChallengeRewardsListRow>
-            <hr />
-          </ChallengeListItem>
+                  </div>
+                </ChallengeRewardsListRow>
+                <hr />
+              </ChallengeListItem>
             );
-        })}
+          })}
         </ChallengeList>
 
         <ChallengeBox>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaAngleDown, FaAngleRight } from 'react-icons/fa';
+import { FaAngleDown, FaAngleRight, FaBars, FaThLarge } from 'react-icons/fa';
 import { NavLink, withRouter } from 'react-router-dom';
 import { gamesDetails } from '../global/GamesDetails.js';
 import {BrowserContainer, GameCard, GameWrapper, GameTitle, GameCat} from './LibraryPageStyle.js';
@@ -11,6 +11,13 @@ class LibraryPage extends Component {
 
     return (
             <BrowserContainer>
+                <GameCat >
+                    <FaThLarge size={20}/>
+                    <FaBars size={20} />
+                    <FaBars size={20} />
+                    <input type="text" placeholder="Search"></input>
+                </GameCat>
+
                 <GameCat onClick={()=> setShowInstalledGames(!showInstalledGames)}> { showInstalledGames ? <FaAngleDown /> : <FaAngleRight /> }Instalados</GameCat>
                 <GameWrapper showing={showInstalledGames}>
                     {showInstalledGames ? (gamesDetails.filter((el) => el[1] === "Installed").map((el,index) => <NavLink to={"/game/"+el[0]+"/overview"}><GameCard key={el[0]}> <img src={el[4]} alt="" /><GameTitle><span>{el[3]}</span></GameTitle></GameCard></NavLink>)) : ""}

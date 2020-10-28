@@ -45,14 +45,13 @@ export const Dots = styled.div`
   }
 `;
 export const LArrow = styled.div`
-  z-index: 9999;
-
+  z-index: 2;
   position: absolute;
   top: 40%;
   left: 0;
 `;
 export const RArrow = styled.div`
-  z-index: 9999;
+  z-index: 2;
   position: absolute;
   top: 40%;
   right: 0;

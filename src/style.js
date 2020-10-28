@@ -21,6 +21,8 @@ export const BrowserWrapper = styled.div`
 `;
 
 export const CssWindow = styled.div`
+  position: relative;
+
   padding: 2px;
   background: #1c2127;
   width: 80%;
@@ -68,7 +70,7 @@ export const Windowsopt = styled.header`
 export const WindowHeader = styled.div`
   padding: 22px 40px;
   background: #161a1f;
-  color: #0077ee;
+  color: #55aaff;
   width: 100%;
   height: 60px;
   max-height: 90px;
@@ -118,6 +120,52 @@ export const HeaderRight = styled.div`
   }
 `;
 
+export const HamburgerBG = styled.div`
+  z-index: 3;
+  padding: 52px 40px;
+  display: ${(props) => (props.open ? "visible" : "none")};
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 20, 25, 0.7);
+`;
+export const HamburgerMenu = styled(HamburgerBG)`
+  width: 300px;
+  position: absolute;
+  z-index: 4;
+  background: rgba(28, 33, 39, 1);
+  top: 0px;
+  left: 0;
+  svg:hover {
+    filter: brightness(120%);
+  }
+`;
+export const HamburgerList = styled.div`
+  font-family: "UbisoftSansBold";
+  margin-left: -40px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  margin-top: 23px;
+  div {
+    padding: 15px 0 15px 40px;
+  }
+  svg {
+    margin-right: 15px;
+  }
+  div:hover a,
+  div:hover {
+    background: #0077ee;
+    color: white;
+  }
+  a{
+    color: #0077ee;
+    text-decoration:none;
+  }
+`;
 export const ProfilePart = styled.div`
   position: relative;
   margin-left: 40px;
@@ -135,7 +183,7 @@ export const ProfilePic = styled.div`
   img {
     width: 38px;
     height: 38px;
-    border: 2px solid #0077ee;
+    border: 2px solid #55aaff;
   }
 `;
 export const ProfileData = styled.div`
@@ -163,7 +211,6 @@ export const ProfCoins = styled.div`
   font-size: 14px;
   color: white;
   padding-left: 4px;
-  /* border-left: 1px solid gray; */
 
   img {
     border: 0;

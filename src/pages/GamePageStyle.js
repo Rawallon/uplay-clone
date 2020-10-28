@@ -1,31 +1,40 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const BrowserContainer = styled.div`
-  /* padding: 0 9% 0 9%; */
-  /* width: 100%;
-  height: 100%; */
-  color: #0077EE;
+  color: #55aaff;
   max-width: 1500px;
   min-width: 900px;
-  
+`;
+const StoreAnimation = keyframes`
+        0% {
+            transform: scale(0.3);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.3);
+            opacity: 0;
+        }
 `;
 export const StoreContainer = styled(BrowserContainer)`
-width:100%;
+  width: 100%;
   background: #000;
-  display:flex;
-  align-content:center;
-  justify-content:center;
-  img{
-    width:15%;
-    height:auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  img {
+    fill: white;
+    width: 15%;
+    animation: ${StoreAnimation} 3s ease-in-out infinite alternate;
   }
 `;
 export const PageWrapper = styled.div`
-  height: 100%;
-  width:100%;
+  width: 100%;
   display: grid;
-  /* grid-template-columns: 0.65fr 2fr; */
-  grid-template-columns: minmax(200px,0.3fr) minmax(1080px,1fr);
+  grid-template-columns: minmax(200px, 0.3fr) 1fr;
   gap: 40px;
 `;
 export const MenuWrapper = styled.div`
@@ -35,7 +44,7 @@ export const MenuWrapper = styled.div`
   left: 0;
   width: 100%;
   max-width: 300px;
-  height: 35vh;
+  height: 40vh;
   justify-self: end;
   font-size: 13px;
 `;
@@ -44,7 +53,6 @@ export const TextLink = styled.div`
   align-items: center;
   margin-bottom: 30px;
 
-  
   svg {
     margin-right: 14px;
   }
@@ -62,7 +70,7 @@ export const TextLink = styled.div`
     color: white;
     width: 100%;
     height: 40px;
-    background: #0077EE;
+    background: #0077ee;
     border-radius: 3px;
   }
 

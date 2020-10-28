@@ -1,7 +1,7 @@
 import React from "react";
 import {
   RewardsGrid,
-  AchievBox,
+  PropBox,
   PropsDesc,
   PropsGrid,
 } from "./GamePagesStyle";
@@ -12,15 +12,16 @@ export default function Rewards(props) {
   return (
     <PropsGrid>
       <RewardsGrid style>
-        <AchievBox unlocked={true}>
+        <PropBox unlocked={true}>
           <PropsDesc>
             <TextLink><a href="https://github.com/Rawallon"><FaGlobe /> My Github</a></TextLink>
             <TextLink><a href="https://github.com/Rawallon"><FaFacebook /> My Github</a></TextLink>
             <TextLink><a href="https://github.com/Rawallon"><FaComments /> My Github</a></TextLink>
             <TextLink><a href="https://github.com/Rawallon"><FaQuestion /> My Github</a></TextLink>
-            
+
           </PropsDesc>
-        </AchievBox>
+          <section></section>
+        </PropBox>
       </RewardsGrid>
 
     </PropsGrid>

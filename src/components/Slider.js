@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NewsCard, LArrow, RArrow , Dots} from "./SliderStyle";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { newsSlider } from '../global/GamesDetails';

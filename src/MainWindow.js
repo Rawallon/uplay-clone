@@ -24,6 +24,9 @@ import {
   SubProfileData,
   SubProfileSeparator,
   SubProfileBadge,
+  HamburgerMenu,
+  HamburgerBG,
+  HamburgerList,
 } from "./style";
 import {
   FaWindowMinimize,
@@ -35,6 +38,10 @@ import {
   FaHeart,
   FaShoppingCart,
   FaSortDown,
+  FaKey,
+  FaWrench,
+  FaDownload,
+  FaGithub,
 } from "react-icons/fa";
 
 import NewsPage from "./pages/NewsPage";
@@ -44,6 +51,7 @@ import GamePage from "./pages/GamePage";
 import StorePage from "./pages/StorePage";
 
 export default function MainWindow() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [showInstalledGames, setShowInstalledGames] = useState(0);
   const [showMyGames, setShowMyGames] = useState(0);
   const [showFreeGames, setShowFreeGames] = useState(0);
@@ -62,14 +70,38 @@ export default function MainWindow() {
               </Windowsopt>
             </WindowsBar>
             <WindowHeader>
+              <HamburgerBG open={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <HamburgerMenu open={isMenuOpen}>
+                  <FaTimes size={23} onClick={() => setIsMenuOpen(!isMenuOpen)} />
+                  <HamburgerList>
+                    <div>
+                      <a href="https://github.com/Rawallon">
+                        <FaGithub />
+                    My Github
+                    </a>
+                    </div>
+                    <div>
+                      <FaKey />
+                    Activate a key
+                  </div>
+                    <div>
+                      <FaWrench />
+                    Settings
+                  </div>
+                    <div>
+                      <FaDownload />
+                    Downloads
+                  </div>
+                  </HamburgerList>
+                </HamburgerMenu>
+              </HamburgerBG>
               <HeaderLeft>
-                <FaBars size={18} />
+                <FaBars size={18} onClick={() => setIsMenuOpen(!isMenuOpen)} />
                 <NavLink to="/news">Notícias</NavLink>
                 <NavLink to="/games">Jogos</NavLink>
                 <NavLink to="/store">Store</NavLink>
                 <a href="https://github.com/Rawallon">My Github</a>
               </HeaderLeft>
-
               <HeaderRight>
                 <FaComment size={20} />
                 <FaUserFriends size={20} />

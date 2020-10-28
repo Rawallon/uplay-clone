@@ -14,7 +14,7 @@ import dummyAchiev2 from '../../assets/achiev1.webp'
 export default function Rewards(props) {
   return (
     <AchievGrid style>
-        
+
       <AchievBox unlocked={true}>
         <div>
           <AchievLocked>
@@ -41,11 +41,11 @@ export default function Rewards(props) {
             Desbloqueado
           </div>
           <span>{new Date().toLocaleDateString()}</span>
-          
+
         </AchievText>
       </AchievBox>
 
-      
+
     </AchievGrid>
   );
 }

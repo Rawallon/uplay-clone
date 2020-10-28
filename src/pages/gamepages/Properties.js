@@ -1,7 +1,7 @@
 import React from "react";
 import {
   RewardsGrid,
-  AchievBox,
+  PropBox,
   RewardBtn,
   PropsDesc,
   PropsGrid,
@@ -11,7 +11,7 @@ export default function Rewards(props) {
   return (
     <PropsGrid>
       <RewardsGrid style>
-        <AchievBox unlocked={true}>
+        <PropBox unlocked={true}>
           <PropsDesc>
             <h1>Desbloqueie uma versão teste</h1>
             <span>
@@ -23,11 +23,13 @@ export default function Rewards(props) {
             </RewardBtn>
             <h1> </h1>
           </PropsDesc>
-        </AchievBox>
+          <section></section>
+
+        </PropBox>
       </RewardsGrid>
 
       <RewardsGrid style>
-        <AchievBox unlocked={true}>
+        <PropBox unlocked={true}>
           <PropsDesc>
             <h1>
               Essa ação permite que você especifique argumentos de linha de
@@ -37,7 +39,7 @@ export default function Rewards(props) {
               <button>Desbloqueie uma versão teste</button>
             </RewardBtn>
           </PropsDesc>
-        </AchievBox>
+        </PropBox>
       </RewardsGrid>
     </PropsGrid>
   );

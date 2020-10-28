@@ -7,8 +7,6 @@ export const OverviewGrid = styled.div`
   padding: 40px 40px 0 0;
   margin-bottom: 20px;
   grid-template-columns: 1fr;
-  /* grid-template-rows: repeat(4, min); */
-  /* grid-template-rows: minmax(134px, 134px); */
 `;
 
 export const NewsGrid = styled(OverviewGrid)`
@@ -57,7 +55,6 @@ export const RewardBox = styled.div`
   display: grid;
   grid-template-columns: 0.35fr 1fr;
   width: 100%;
-  /* padding: 20px 20px 0 20px; */
   padding: 20px 20px;
   background: ${props => props.unlocked ? "#13161A" : "#090A0C"};
   border-bottom: 2px solid #1c2127;
@@ -69,6 +66,14 @@ export const RewardBox = styled.div`
   }
 `;
 
+export const PropBox = styled(RewardBox)`
+  grid-template-columns:  4fr 1fr;
+  overflow: hidden;
+  section{
+    width:10vw;
+    
+  }
+`;
 export const AchievBox = styled(RewardBox)`
 
   grid-template-columns:  fit-content(100%) 1fr fit-content(100%);
@@ -276,7 +281,6 @@ export const ClubColumn = styled.div`
     background: transparent;
     padding: 30px 0;
   }
-  /* font-size: 11px; */
 `;
 
 export const ClubColumnBox = styled.div`
@@ -332,8 +336,15 @@ export const RewardBtn = styled.div`
     color: white;
     background: #0077EE;
     border-radius: 3px;
+    display:flex;
+    align-items:center;
   }
-
+  img{
+    width: 18px;
+    height:18px;
+        min-width: 0px;
+        margin: 0 5px;
+  }
   button:hover {
     filter: brightness(105%);
   }
@@ -384,7 +395,7 @@ export const ProfileList = styled.div`
 `;
 
 export const Profile = styled.div`
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid ${(props) => (props.status === "on" ? "rgba(255,255,255,0.5)" : "#FFF")};
   padding: 12px 24px;
   display: flex;
   font-size: 13px;
@@ -417,7 +428,7 @@ export const ChallengeListItem = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 16px 0 16px;
-  background: ${props => props.active ? "#1F2E3D" : "#111419" };
+  background: ${props => props.active ? "#1F2E3D" : "#111419"};
 
   h1 {
     font-size: 16px;

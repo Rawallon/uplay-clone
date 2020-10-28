@@ -9,14 +9,32 @@ export const GameCat = styled.section`
   font-family: "UbisoftSansBold";
   text-decoration: none;
   color: #55aaff;
-  /* margin-left: 30px; */
 
   display: flex;
   align-items: center;
   margin-bottom: 13px;
 
+  svg:hover,
   &:hover {
     filter: brightness(105%);
+  }
+  svg{
+    margin-right:25px;
+  }
+  input:focus{
+    
+    border: 1px solid #BBBDBF;
+    background: #55595D;
+    color:#fff;
+  }
+  input:hover{
+    border: 1px solid #505358;
+  }
+  input{
+    border: 1px solid #2F3339;
+    background: #2F3339;
+    padding: 7px 10px;
+    border-radius: 3px;
   }
 `;
 
@@ -33,6 +51,9 @@ export const GameWrapper = styled.div`
   gap: 30px;
   padding: ${(props) => (props.showing ? "16px 0;" : "0;")};
   border-top: ${(props) => (props.showing ? "1px solid #33383D;" : "0;")};
+  a{
+    text-decoration:none;
+  }
 `;
 export const GameCard = styled.div`
   font-family: "UbisoftSans";
@@ -41,7 +62,6 @@ export const GameCard = styled.div`
   width: 237px;
   height: 357px;
   justify-content: flex-start;
-  /* margin: 0 16px; */
 
   display: flex;
   flex-direction: column;
@@ -62,8 +82,6 @@ export const GameTitle = styled.div`
   align-items: center;
 
   span {
-    text-decoration: none;
     padding: 0 10px;
-    /* font-size: 16px; */
   }
 `;
