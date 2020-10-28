@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.js": "/uplay-clone/static/js/main.df29a86d.chunk.js",
+    "main.js.map": "/uplay-clone/static/js/main.df29a86d.chunk.js.map",
+    "runtime-main.js": "/uplay-clone/static/js/runtime-main.762fe6aa.js",
+    "runtime-main.js.map": "/uplay-clone/static/js/runtime-main.762fe6aa.js.map",
+    "static/js/2.91a93cca.chunk.js": "/uplay-clone/static/js/2.91a93cca.chunk.js",
+    "static/js/2.91a93cca.chunk.js.map": "/uplay-clone/static/js/2.91a93cca.chunk.js.map",
+    "index.html": "/uplay-clone/index.html",
+    "precache-manifest.2b12dff76e7b40a1bb978cc890f81796.js": "/uplay-clone/precache-manifest.2b12dff76e7b40a1bb978cc890f81796.js",
+    "service-worker.js": "/uplay-clone/service-worker.js",
+    "static/js/2.91a93cca.chunk.js.LICENSE.txt": "/uplay-clone/static/js/2.91a93cca.chunk.js.LICENSE.txt",
+    "static/media/acblackflag.png": "/uplay-clone/static/media/acblackflag.eca108db.png",
+    "static/media/achiev.webp": "/uplay-clone/static/media/achiev.ac74fe4b.webp",
+    "static/media/achiev1.webp": "/uplay-clone/static/media/achiev1.4dc0d17e.webp",
+    "static/media/badge-placeholder.svg": "/uplay-clone/static/media/badge-placeholder.706f01ca.svg",
+    "static/media/banner-right.webp": "/uplay-clone/static/media/banner-right.698367fc.webp",
+    "static/media/big-logo.svg": "/uplay-clone/static/media/big-logo.fe0b2a5a.svg",
+    "static/media/club-header.jpg": "/uplay-clone/static/media/club-header.15502a55.jpg",
+    "static/media/coin.svg": "/uplay-clone/static/media/coin.cda8a819.svg",
+    "static/media/mini-logo.svg": "/uplay-clone/static/media/mini-logo.f2af70cd.svg",
+    "static/media/profile.jpg": "/uplay-clone/static/media/profile.2e6e0610.jpg",
+    "static/media/rayman.png": "/uplay-clone/static/media/rayman.3dcf33b2.png",
+    "static/media/tcgrwildlands.png": "/uplay-clone/static/media/tcgrwildlands.655b5286.png",
+    "static/media/tcrs.png": "/uplay-clone/static/media/tcrs.77a3c9c5.png",
+    "static/media/tdiv2.png": "/uplay-clone/static/media/tdiv2.857c2061.png",
+    "static/media/ubisoftsans-bold.woff": "/uplay-clone/static/media/ubisoftsans-bold.234c04b8.woff",
+    "static/media/ubisoftsans-bold.eot": "/uplay-clone/static/media/ubisoftsans-bold.5969ac44.eot",
+    "static/media/ubisoftsans-regular.eot": "/uplay-clone/static/media/ubisoftsans-regular.58bb44fc.eot",
+    "static/media/ubisoftsans-regular.woff": "/uplay-clone/static/media/ubisoftsans-regular.8ae7a441.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.762fe6aa.js",
+    "static/js/2.91a93cca.chunk.js",
+    "static/js/main.df29a86d.chunk.js"
+  ]
+}
